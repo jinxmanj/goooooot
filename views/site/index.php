@@ -66,7 +66,7 @@ $this->registerJs($script, View::POS_END);
 <!-- Page Contents -->
 <div class="pusher">
     <div class="ui inverted vertical masthead center aligned segment">
-        <div id="particles-js" style="margin-top: -15px"></div>
+        <div id="particles-js" style="margin-top: -14px"></div>
         <div class="ui container">
             <div class="ui large secondary inverted pointing menu">
                 <a class="toc item">
@@ -83,7 +83,7 @@ $this->registerJs($script, View::POS_END);
             </div>
         </div>
         <div class="ui text container">
-            <h2 style="margin-top: 50px">Do whatever you want when you want to</h2>
+            <h2 style="margin-top: 50px;position: relative">Do whatever you want when you want to</h2>
             <div class="ui horizontal divider inverted">Or</div>
             <div class="ui grid special cards">
                 <div class="two wide column"></div>
@@ -93,7 +93,7 @@ $this->registerJs($script, View::POS_END);
                             <div class="ui dimmer">
                                 <div class="content">
                                     <div class="center">
-                                        <div class="ui inverted button">Add Friend</div>
+                                        <div class="ui inverted button">Coming Soon</div>
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +116,7 @@ $this->registerJs($script, View::POS_END);
                             <div class="ui inverted dimmer">
                                 <div class="content">
                                     <div class="center">
-                                        <div class="ui primary button">Add Friend</div>
+                                        <div class="ui primary button">Coming Soon</div>
                                     </div>
                                 </div>
                             </div>
@@ -135,6 +135,9 @@ $this->registerJs($script, View::POS_END);
                 </div>
                 <div class="two wide column"></div>
             </div>
+        </div>
+        <div class="ui text container">
+            <p style="margin-top: 50px;position: relative">&copy;&nbsp;<?= date('Y') ?>&nbsp;Goooooot.com</p>
         </div>
     </div>
 </div>
