@@ -11,7 +11,10 @@ $('.special.cards .image').dimmer({
 JS;
 $this->registerJs($script, View::POS_END);
 ?>
-<h2 style="margin-top: 50px;position: relative">Do whatever you want when you want to</h2>
+<h2 style="position: relative">
+<!--    Do whatever you want when you want to-->
+    La vie est courte, commencez par le dessert !
+</h2>
 <div class="ui horizontal divider inverted">Or</div>
 <div class="ui grid special cards">
     <div class="four wide column">
