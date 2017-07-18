@@ -66,10 +66,9 @@ $this->registerJs($script, View::POS_END);
     <a class="item">Signup</a>
 </div>
 <!-- Page Contents -->
-<div id="particles-js"></div>
-
 <div class="pusher">
     <div class="ui inverted vertical masthead center aligned segment">
+        <div id="particles-js"></div>
         <div class="ui container">
             <div class="ui large secondary inverted pointing menu">
                 <a class="toc item">
