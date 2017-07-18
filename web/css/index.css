@@ -80,6 +80,7 @@
 /* particles-js */
 body {
     margin: 0;
+    background: #2c3e50 no-repeat;
 }
 canvas {
     display: block;
