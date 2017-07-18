@@ -10,7 +10,19 @@ use yii\web\View as View;
 AppAsset::register($this);
 ?>
 <?php $script = <<< JS
-particlesJS.load('particles-js', 'js/particles.json', function() {
+$(document).ready(function () {
+    $('.masthead').visibility({
+        once: false,
+        onBottomPassed: function () {
+            $('.fixed.menu').transition('fade in');
+        },
+        onBottomPassedReverse: function () {
+            $('.fixed.menu').transition('fade out');
+        }
+    });
+    $('.ui.sidebar').sidebar('attach events', '.toc.item');
+    particlesJS.load('particles-js', 'js/particles.json', function () {
+    });
 });
 JS;
 $this->registerJs($script, View::POS_END);
@@ -54,9 +66,10 @@ $this->registerJs($script, View::POS_END);
     <a class="item">Signup</a>
 </div>
 <!-- Page Contents -->
+<div id="particles-js"></div>
+
 <div class="pusher">
     <div class="ui inverted vertical masthead center aligned segment">
-        <div id="particles-js" style="margin-top: -14px"></div>
         <div class="ui container">
             <div class="ui large secondary inverted pointing menu">
                 <a class="toc item">
@@ -66,16 +79,16 @@ $this->registerJs($script, View::POS_END);
                 <a class="item">Work</a>
                 <a class="item">Company</a>
                 <a class="item">Careers</a>
-<!--                <div class="right item">-->
-<!--                    <a class="ui inverted button">Log in</a>-->
-<!--                    <a class="ui inverted button">Sign Up</a>-->
-<!--                </div>-->
+                <div class="right item">
+                    <a class="ui inverted button">Log in</a>
+                    <a class="ui inverted button">Sign Up</a>
+                </div>
             </div>
         </div>
-        <div class="ui text container">
+        <div class="ui container">
             <?= $content ?>
         </div>
-        <div class="ui text container">
+        <div class="ui container">
             <p style="margin-top: 50px;position: relative">&copy;&nbsp;<?= date('Y') ?>&nbsp;Goooooot.com</p>
         </div>
     </div>

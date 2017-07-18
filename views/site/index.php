@@ -5,41 +5,18 @@ use yii\web\View as View;
 
 $this->title = 'I Goooooot It !';
 $script = <<< JS
-
 $('.special.cards .image').dimmer({
   on: 'hover'
 });
-
-$(document)
-    .ready(function() {
-      // fix menu when passed
-      $('.masthead')
-        .visibility({
-          once: false,
-          onBottomPassed: function() {
-            $('.fixed.menu').transition('fade in');
-          },
-          onBottomPassedReverse: function() {
-            $('.fixed.menu').transition('fade out');
-          }
-        })
-      ;
-      // create sidebar and attach to menu open
-      $('.ui.sidebar')
-        .sidebar('attach events', '.toc.item')
-      ;
-    })
-;
-
 JS;
-$this->registerCssFile('/css/index.css');
 $this->registerJs($script, View::POS_END);
 ?>
 <h2 style="margin-top: 50px;position: relative">Do whatever you want when you want to</h2>
 <div class="ui horizontal divider inverted">Or</div>
 <div class="ui grid special cards">
-    <div class="two wide column"></div>
-    <div class="six wide column">
+    <div class="four wide column">
+    </div>
+    <div class="four wide column">
         <div class="ui card">
             <div class="blurring dimmable image">
                 <div class="ui dimmer">
@@ -62,7 +39,7 @@ $this->registerJs($script, View::POS_END);
             </div>
         </div>
     </div>
-    <div class="six wide column">
+    <div class="four wide column">
         <div class="ui card">
             <div class="blurring dimmable image">
                 <div class="ui inverted dimmer">
@@ -85,6 +62,7 @@ $this->registerJs($script, View::POS_END);
             </div>
         </div>
     </div>
-    <div class="two wide column"></div>
+    <div class="four wide column">
+    </div>
 </div>
 

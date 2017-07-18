@@ -1,115 +1,94 @@
-html,
-body {
-    height: 100%;
+.hidden.menu {
+    display: none;
 }
-
-.wrap {
-    min-height: 100%;
-    height: auto;
-    margin: 0 auto -60px;
-    padding: 0 0 60px;
+.masthead.segment {
+    min-height: 700px;
+    padding: 1em 0em;
 }
-
-.wrap > .container {
-    padding: 70px 15px 20px;
+.masthead .logo.item img {
+    margin-right: 1em;
 }
-
-.footer {
-    height: 60px;
-    background-color: #f5f5f5;
-    border-top: 1px solid #ddd;
-    padding-top: 20px;
+.masthead .ui.menu .ui.button {
+    margin-left: 0.5em;
 }
-
-.jumbotron {
-    text-align: center;
-    background-color: transparent;
-}
-
-.jumbotron .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-}
-
-.not-set {
-    color: #c55;
-    font-style: italic;
-}
-
-/* add sorting icons to gridview sort links */
-a.asc:after, a.desc:after {
-    position: relative;
-    top: 1px;
-    display: inline-block;
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
+.masthead h1.ui.header {
+    margin-top: 3em;
+    margin-bottom: 0em;
+    font-size: 4em;
     font-weight: normal;
-    line-height: 1;
-    padding-left: 5px;
 }
-
-a.asc:after {
-    content: /*"\e113"*/ "\e151";
+.masthead h2 {
+    font-size: 1.7em;
+    font-weight: normal;
 }
-
-a.desc:after {
-    content: /*"\e114"*/ "\e152";
+.ui.vertical.stripe {
+    padding: 8em 0em;
 }
-
-.sort-numerical a.asc:after {
-    content: "\e153";
+.ui.vertical.stripe h3 {
+    font-size: 2em;
 }
-
-.sort-numerical a.desc:after {
-    content: "\e154";
+.ui.vertical.stripe .button + h3,
+.ui.vertical.stripe p + h3 {
+    margin-top: 3em;
 }
-
-.sort-ordinal a.asc:after {
-    content: "\e155";
+.ui.vertical.stripe .floated.image {
+    clear: both;
 }
-
-.sort-ordinal a.desc:after {
-    content: "\e156";
+.ui.vertical.stripe p {
+    font-size: 1.33em;
 }
-
-.grid-view th {
-    white-space: nowrap;
+.ui.vertical.stripe .horizontal.divider {
+    margin: 3em 0em;
 }
-
-.hint-block {
-    display: block;
-    margin-top: 5px;
-    color: #999;
+.quote.stripe.segment {
+    padding: 0em;
 }
-
-.error-summary {
-    color: #a94442;
-    background: #fdf7f7;
-    border-left: 3px solid #eed3d7;
-    padding: 10px 20px;
-    margin: 0 0 15px 0;
+.quote.stripe.segment .grid .column {
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
-
-/* align the logout "link" (button in form) of the navbar */
-.nav li > form > button.logout {
-    padding: 15px;
-    border: none;
+.footer.segment {
+    padding: 5em 0em;
 }
-
-@media(max-width:767px) {
-    .nav li > form > button.logout {
-        display:block;
-        text-align: left;
-        width: 100%;
-        padding: 10px 15px;
+.secondary.pointing.menu .toc.item {
+    display: none;
+}
+@media only screen and (max-width: 700px) {
+    .ui.fixed.menu {
+        display: none !important;
+    }
+    .secondary.pointing.menu .item,
+    .secondary.pointing.menu .menu {
+        display: none;
+    }
+    .secondary.pointing.menu .toc.item {
+        display: block;
+    }
+    .masthead.segment {
+        min-height: 350px;
+    }
+    .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+    }
+    .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1.5em;
     }
 }
 
-.nav > li > form > button.logout:focus,
-.nav > li > form > button.logout:hover {
-    text-decoration: none;
+/* particles-js */
+body {
+    margin: 0;
+    background: #2c3e50 no-repeat;
 }
-
-.nav > li > form > button.logout:focus {
-    outline: none;
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #2c3e50 no-repeat;
 }
