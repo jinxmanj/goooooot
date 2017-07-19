@@ -8,6 +8,9 @@ $script = <<< JS
 $('.special.cards .blurring.dimmable.image').dimmer({
   on: 'hover'
 });
+particlesJS.load('particles-js', 'js/particles.json', function () {
+});
+$("#particles-js").css("background-color","#2c3e50");
 JS;
 $this->registerJs($script, View::POS_END);
 ?>

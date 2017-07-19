@@ -21,8 +21,6 @@ $(document).ready(function () {
         }
     });
     $('.ui.sidebar').sidebar('attach events', '.toc.item');
-    particlesJS.load('particles-js', 'js/particles.json', function () {
-    });
 });
 JS;
 $this->registerJs($script, View::POS_END);
