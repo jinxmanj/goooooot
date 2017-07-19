@@ -5,7 +5,7 @@ use yii\web\View as View;
 
 $this->title = 'I Goooooot It !';
 $script = <<< JS
-$('.special.cards .image').dimmer({
+$('.special.cards .blurring.dimmable.image').dimmer({
   on: 'hover'
 });
 JS;
@@ -35,31 +35,18 @@ $this->registerJs($script, View::POS_END);
                     <span class="date">Create in Sep 2014</span>
                 </div>
             </div>
-            <div class="extra content">
-                <a><i class="users icon"></i> 2 Members </a>
-            </div>
         </div>
     </div>
     <div class="four wide column">
         <div class="ui card">
-            <div class="blurring dimmable image">
-                <div class="ui inverted dimmer">
-                    <div class="content">
-                        <div class="center">
-                            <div class="ui primary button">Coming Soon</div>
-                        </div>
-                    </div>
-                </div>
+            <a class="image" href="#">
                 <img src="/images/avatar/large/jenny.jpg">
-            </div>
+            </a>
             <div class="content">
-                <a class="header">Team Hess</a>
+                <a class="header" href="#">Steve Jobes</a>
                 <div class="meta">
-                    <span class="date">Create in Aug 2014</span>
+                    <a>Last Seen 2 days ago</a>
                 </div>
-            </div>
-            <div class="extra content">
-                <a><i class="users icon"></i> 2 Members </a>
             </div>
         </div>
     </div>
@@ -81,9 +68,6 @@ $this->registerJs($script, View::POS_END);
                     <span class="date">Create in Sep 2014</span>
                 </div>
             </div>
-            <div class="extra content">
-                <a><i class="users icon"></i> 2 Members </a>
-            </div>
         </div>
     </div>
     <div class="four wide column">
@@ -103,9 +87,6 @@ $this->registerJs($script, View::POS_END);
                 <div class="meta">
                     <span class="date">Create in Aug 2014</span>
                 </div>
-            </div>
-            <div class="extra content">
-                <a><i class="users icon"></i> 2 Members </a>
             </div>
         </div>
     </div>
