@@ -82,7 +82,7 @@ $this->registerJs($script, View::POS_END);
                 </div>
             </div>
         </div>
-        <div class="ui container" style="padding-top: 50px">
+        <div style="padding-top: 50px">
             <?= $content ?>
         </div>
         <div class="ui container">
