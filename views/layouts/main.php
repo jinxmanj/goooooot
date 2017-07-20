@@ -60,8 +60,8 @@ $this->registerJs($script, View::POS_END);
     <a class="item">Work</a>
     <a class="item">Company</a>
     <a class="item">Careers</a>
-    <a class="item">Login</a>
-    <a class="item">Signup</a>
+<!--    <a class="item">Login</a>-->
+<!--    <a class="item">Signup</a>-->
 </div>
 <!-- Page Contents -->
 <div class="pusher">
@@ -77,8 +77,10 @@ $this->registerJs($script, View::POS_END);
                 <a class="item">Company</a>
                 <a class="item">Careers</a>
                 <div class="right item">
-                    <a class="ui inverted button">Log in</a>
-                    <a class="ui inverted button">Sign Up</a>
+                    <h1>Color
+                    </h1>
+<!--                    <a class="ui inverted button">Log in</a>-->
+<!--                    <a class="ui inverted button">Sign Up</a>-->
                 </div>
             </div>
         </div>
