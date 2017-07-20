@@ -88,7 +88,7 @@ $this->registerJs($script, View::POS_END);
             <?= $content ?>
         </div>
         <div class="ui container">
-            <p style="margin-top: 50px;position: relative">&copy;&nbsp;<?= date('Y') ?>&nbsp;Goooooot.com</p>
+            <p style="margin-top: 100px;position: relative">&copy;&nbsp;<?= date('Y') ?>&nbsp;Goooooot.com</p>
         </div>
     </div>
 </div>
