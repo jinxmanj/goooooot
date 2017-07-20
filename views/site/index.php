@@ -31,7 +31,7 @@ $this->registerJs($script, View::POS_END);
                             </div>
                         </div>
                     </div>
-                    <img src="/images/avatar/large/elliot.jpg">
+                    <img src="/images/encript.jpg">
                 </div>
                 <div class="content">
                     <a class="header">Team Fu</a>
@@ -44,12 +44,12 @@ $this->registerJs($script, View::POS_END);
         <div class="four wide column">
             <div class="ui card">
                 <a class="image" href="#">
-                    <img src="/images/avatar/large/jenny.jpg">
+                    <img src="/images/ip-address.png">
                 </a>
                 <div class="content">
-                    <a class="header" href="#">Steve Jobes</a>
+                    <a class="header" href="#">IP Lookup</a>
                     <div class="meta">
-                        <a>Last Seen 2 days ago</a>
+                        <a>Looked up 1000,345 times</a>
                     </div>
                 </div>
             </div>
@@ -64,10 +64,10 @@ $this->registerJs($script, View::POS_END);
                             </div>
                         </div>
                     </div>
-                    <img src="/images/avatar/large/elliot.jpg">
+                    <img src="/images/steak.png">
                 </div>
                 <div class="content">
-                    <a class="header">Team Fu</a>
+                    <a class="header">What to eat today</a>
                     <div class="meta">
                         <span class="date">Create in Sep 2014</span>
                     </div>
